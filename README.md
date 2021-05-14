@@ -1,23 +1,18 @@
 # big_data_project
 Big Data final project ETL and Profiling process
 
-## Input:
-1. dota_data.csv - original dota data obtained from Open Dota API data explorer
-    link:https://www.opendota.com/explorer?
-2. tail_games1-4.csv - original league of legends data obtained from Kaggle
-    link:https://www.kaggle.com/kdanielive/lol-partchallenger-1087?select=tail_games4.csv
-3. riot_champion.csv - original league of legends champion data with id obtained from Kaggle
-    link:https://www.kaggle.com/gyejr95/league-of-legendslol-champion-and-item-2020
-4. dota_hero.csv - original dota hero data obtained from Open Dota API data explorer
-    link:https://www.opendota.com/explorer?
-    Note: there's no need to clean this dataset (only 2 columns), so it's placed outside input folder
+## input:
+1. dota_data.csv - original dota data obtained from Open Dota API data explorer (https://www.opendota.com/explorer?)
+3. tail_games1-4.csv - original league of legends data obtained from Kaggle (https://www.kaggle.com/kdanielive/lol-partchallenger-1087?select=tail_games4.csv)
+3. riot_champion.csv - original league of legends champion data with id obtained from Kaggle (https://www.kaggle.com/gyejr95/league-of-legendslol-champion-and-item-2020)
 
-## Output.zip: zipped file for cleaned and profiled outputs
+## Output.zip: 
+zipped file for cleaned and profiled outputs
 champion_clean.csv - cleaned riot_champion.csv file
-dota_hero.csv - the same dota_hero.csv file from above. No cleaning needed
+dota_hero.csv - original dota hero data obtained from Open Dota API data explorer (https://www.opendota.com/explorer?). No cleaning needed.
 game_output.csv - cleaned dota and league match data from dota_data.csv and tail_games1-4.csv, merged together on HDFS
 
-## Data_profiling:
+## data_profiling:
 CountRecs - java mapreduce code written to count the number of records in the dataset
 original_results - number of records before cleaning for the 4 input datasets
 cleaned_result - number of records after cleaning
